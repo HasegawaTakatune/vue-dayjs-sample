@@ -21,6 +21,12 @@ import HelloWorld from "./components/HelloWorld.vue";
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/add-subract">Dayjs Add/Subract</RouterLink>
         <RouterLink to="/startof-endof">Dayjs StartOf/EndOf</RouterLink>
+        <RouterLink to="/diff">Dayjs Diff</RouterLink>
+        <RouterLink to="/after-before-between"
+          >Dayjs After/Before/Between</RouterLink
+        >
+        <RouterLink to="/locale">Dayjs Locale</RouterLink>
+        <RouterLink to="/time-zone">Dayjs Time zone</RouterLink>
       </nav>
     </div>
   </header>

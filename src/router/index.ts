@@ -26,6 +26,26 @@ const router = createRouter({
       path: '/startof-endof',
       name: 'startof-endof',
       component: () => import('@/views/StartOfEndOf.vue')
+    },
+    {
+      path: '/diff',
+      name: 'diff',
+      component: () => import('@/views/Diff.vue')
+    },
+    {
+      path: '/after-before-between',
+      name: 'after-before-between',
+      component: () => import('@/views/AfterBeforeBetween.vue')
+    },
+    {
+      path: '/locale',
+      name: 'locale',
+      component: () => import('@/views/Locale.vue')
+    },
+    {
+      path: '/time-zone',
+      name: 'time-zone',
+      component: () => import('@/views/TimeZone.vue')
     }
   ]
 })
