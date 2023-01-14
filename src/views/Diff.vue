@@ -3,7 +3,6 @@ import { ref, onMounted } from "vue";
 
 import myDayjs from "../components/ts/myDayjs";
 
-const DAY_FORMAT = "YYYY-MM-DD HH:mm:SSS";
 const dateFrom = ref(myDayjs(new Date()).add(3, "y"));
 const dateTo = ref(myDayjs(new Date()));
 

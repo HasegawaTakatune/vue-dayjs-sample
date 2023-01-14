@@ -3,7 +3,7 @@ import { ref, onMounted } from "vue";
 
 import myDayjs from "../components/ts/myDayjs";
 
-const DAY_FORMAT = "YYYY-MM-DD HH:mm:SSS";
+const FORMAT = "YYYY-MM-DD HH:mm:SSS";
 const date = ref(new Date());
 
 onMounted(() => {
@@ -18,91 +18,91 @@ onMounted(() => {
     <div class="result-wrapper">
       <span>Start of year</span>
       <span class="result-date">
-        {{ myDayjs(date).startOf("year").format(DAY_FORMAT) }}
+        {{ myDayjs(date).startOf("year").format(FORMAT) }}
       </span>
     </div>
     <div class="result-wrapper">
       <span>End of year</span>
       <span class="result-date">
-        {{ myDayjs(date).endOf("year").format(DAY_FORMAT) }}
+        {{ myDayjs(date).endOf("year").format(FORMAT) }}
       </span>
     </div>
     <hr />
     <div class="result-wrapper">
       <span>Start of month</span>
       <span class="result-date">
-        {{ myDayjs(date).startOf("month").format(DAY_FORMAT) }}
+        {{ myDayjs(date).startOf("month").format(FORMAT) }}
       </span>
     </div>
     <div class="result-wrapper">
       <span>End of month</span>
       <span class="result-date">
-        {{ myDayjs(date).endOf("month").format(DAY_FORMAT) }}
+        {{ myDayjs(date).endOf("month").format(FORMAT) }}
       </span>
     </div>
     <hr />
     <div class="result-wrapper">
       <span>Start of week</span>
       <span class="result-date">
-        {{ myDayjs(date).startOf("week").format(DAY_FORMAT) }}
+        {{ myDayjs(date).startOf("week").format(FORMAT) }}
       </span>
     </div>
     <div class="result-wrapper">
       <span>End of week</span>
       <span class="result-date">
-        {{ myDayjs(date).endOf("week").format(DAY_FORMAT) }}
+        {{ myDayjs(date).endOf("week").format(FORMAT) }}
       </span>
     </div>
     <hr />
     <div class="result-wrapper">
       <span>Start of day</span>
       <span class="result-date">
-        {{ myDayjs(date).startOf("day").format(DAY_FORMAT) }}
+        {{ myDayjs(date).startOf("day").format(FORMAT) }}
       </span>
     </div>
     <div class="result-wrapper">
       <span>End of day</span>
       <span class="result-date">
-        {{ myDayjs(date).endOf("day").format(DAY_FORMAT) }}
+        {{ myDayjs(date).endOf("day").format(FORMAT) }}
       </span>
     </div>
     <hr />
     <div class="result-wrapper">
       <span>Start of hour</span>
       <span class="result-date">
-        {{ myDayjs(date).startOf("hour").format(DAY_FORMAT) }}
+        {{ myDayjs(date).startOf("hour").format(FORMAT) }}
       </span>
     </div>
     <div class="result-wrapper">
       <span>End of hour</span>
       <span class="result-date">
-        {{ myDayjs(date).endOf("hour").format(DAY_FORMAT) }}
+        {{ myDayjs(date).endOf("hour").format(FORMAT) }}
       </span>
     </div>
     <hr />
     <div class="result-wrapper">
       <span>Start of minute</span>
       <span class="result-date">
-        {{ myDayjs(date).startOf("minute").format(DAY_FORMAT) }}
+        {{ myDayjs(date).startOf("minute").format(FORMAT) }}
       </span>
     </div>
     <div class="result-wrapper">
       <span>End of minute</span>
       <span class="result-date">
-        {{ myDayjs(date).endOf("minute").format(DAY_FORMAT) }}
+        {{ myDayjs(date).endOf("minute").format(FORMAT) }}
       </span>
     </div>
     <hr />
     <div class="result-wrapper">
       <span>Start of second</span>
       <span class="result-date">
-        {{ myDayjs(date).startOf("second").format(DAY_FORMAT) }}
+        {{ myDayjs(date).startOf("second").format(FORMAT) }}
       </span>
     </div>
     <div class="result-wrapper">
       <span>End of second</span>
       <span class="result-date">
-        {{ myDayjs(date).endOf("second").format(DAY_FORMAT) }}
+        {{ myDayjs(date).endOf("second").format(FORMAT) }}
       </span>
     </div>
   </main>

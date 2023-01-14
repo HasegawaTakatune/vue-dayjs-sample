@@ -6,7 +6,6 @@ import myDayjs from "../components/ts/myDayjs";
 const TZ_ASIA_TOKYO = "Asia/Tokyo";
 const TZ_AMERIZA_LOS_ANGELES = "America/Los_Angeles";
 const TZ_EUROPE_LONDON = "Europe/London";
-const DAY_FORMAT = "YYYY-MM-DD HH:mm:SSS";
 
 const date = ref(new Date());
 
