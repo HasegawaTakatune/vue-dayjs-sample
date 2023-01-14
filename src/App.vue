@@ -1,25 +1,16 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
 <template>
   <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="@/assets/logo.svg"
-      width="125"
-      height="125"
-    />
-
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <div class="greetings">
+        <h1 class="green">Dayjs Samples</h1>
+      </div>
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/add-subract">Dayjs Add/Subract</RouterLink>
+        <RouterLink to="/">Dayjs Add/Subract</RouterLink>
         <RouterLink to="/startof-endof">Dayjs StartOf/EndOf</RouterLink>
         <RouterLink to="/diff">Dayjs Diff</RouterLink>
         <RouterLink to="/after-before-between"
@@ -94,6 +85,28 @@ nav a:first-of-type {
 
     padding: 1rem 0;
     margin-top: 1rem;
+  }
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 2.6rem;
+  top: -10px;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+.greetings h1,
+.greetings h3 {
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .greetings h1,
+  .greetings h3 {
+    text-align: left;
   }
 }
 </style>
